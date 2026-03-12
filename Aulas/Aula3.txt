@@ -1,0 +1,226 @@
+ 📚 Unidade 2 – Testes em Integração Contínua (CI)
+
+
+
+
+
+
+1️⃣ O que é Integração Contínua (CI)
+	Integração Contínua (Continuous Integration – CI)** é uma prática de desenvolvimento onde os programadores **integram o código ao repositório frequentemente**, geralmente várias vezes por dia.
+
+Sempre que alguém envia código para o repositório:
+
+1. O sistema **compila o projeto**
+2. **Executa testes automaticamente**
+3. Verifica se o código **não quebrou o sistema**
+
+📌 Objetivo:
+Detectar erros **o mais cedo possível**.
+
+### Exemplo prático
+
+Um desenvolvedor faz:
+
+```
+git push
+```
+
+Automaticamente acontece:
+
+```
+Código enviado → CI executa testes → verifica erros
+```
+
+Se algo falhar, o time já sabe imediatamente.
+
+---
+
+
+
+
+
+
+2️⃣ O que é uma Pipeline de CI
+
+A **pipeline** é o **fluxo automatizado de etapas** que o código passa após ser enviado.
+
+Basicamente é um **processo automático configurado em código**.
+
+### Exemplo de pipeline
+
+```
+1️⃣ Desenvolvedor envia código
+2️⃣ Código é baixado pelo servidor
+3️⃣ Projeto é compilado
+4️⃣ Testes são executados
+5️⃣ Resultado é mostrado
+```
+
+Tudo isso acontece **automaticamente**.
+
+Ferramentas comuns:
+
+* GitHub Actions
+* GitLab CI
+* Jenkins
+* Azure DevOps
+
+
+
+
+
+
+
+
+
+
+3️⃣ Testes Funcionais
+
+Os **testes funcionais** verificam se o sistema está funcionando **como deveria para o usuário**.
+
+Eles testam **funcionalidades reais do sistema**.
+
+### Exemplo
+
+Se um sistema tem login:
+
+Teste funcional verifica:
+
+```
+Usuário digita email e senha
+→ Sistema permite login
+```
+
+Se não funcionar, o teste **falha**.
+
+
+
+
+
+
+
+
+
+
+
+4️⃣ Shifting Left (Shift Left)
+
+Esse é um conceito muito importante em DevOps.
+
+**Shift Left** significa:
+
+👉 **Trazer os testes para o início do desenvolvimento.**
+
+Antigamente:
+
+```
+Desenvolvimento → Testes → Produção
+```
+
+Problema:
+Erros só eram encontrados **no final**.
+
+Com **Shift Left**:
+
+```
+Desenvolvimento + Testes desde o início
+```
+
+Ou seja:
+
+* O código já é testado **enquanto está sendo criado**.
+
+
+
+
+
+
+
+
+
+
+5️⃣ Por que isso é importante?
+
+## 💰 1. Custo menor para corrigir erros
+
+Quanto **mais tarde** um erro é encontrado, **mais caro ele fica**.
+
+Exemplo:
+
+| Onde o erro é encontrado | Custo       |
+| ------------------------ | ----------- |
+| No computador do dev     | Muito baixo |
+| Durante testes           | Médio       |
+| Em produção              | Muito alto  |
+
+Se um erro chega em produção pode causar:
+
+* perda de clientes
+* prejuízo financeiro
+* problemas de imagem da empresa
+
+---
+
+## 🔧 2. Menos retrabalho
+
+Quando erros são encontrados cedo:
+
+* o desenvolvedor corrige **rapidamente**
+* evita refazer muito código
+* o time perde **menos tempo**
+
+
+
+
+
+
+
+
+
+
+
+6️⃣ Qualidade desde o início
+
+A ideia principal dos slides é:
+
+👉 **Qualidade não deve ser verificada apenas no final.**
+
+Ela deve estar presente:
+
+```
+desde o começo do desenvolvimento
+```
+
+Por isso usamos:
+
+* CI
+* Testes automatizados
+* Pipelines
+
+
+
+
+
+
+# 🎯 Resumo que pode cair em prova
+
+**Integração Contínua (CI)**
+Prática onde o código é integrado frequentemente e testado automaticamente.
+
+**Pipeline**
+Fluxo automatizado que executa etapas como build e testes.
+
+**Testes Funcionais**
+Verificam se o sistema funciona corretamente para o usuário.
+
+**Shift Left**
+Estratégia de trazer testes e qualidade para o início do desenvolvimento.
+
+**Benefícios**
+
+* detectar erros cedo
+* reduzir custos
+* diminuir retrabalho
+* melhorar qualidade do software
+
+---

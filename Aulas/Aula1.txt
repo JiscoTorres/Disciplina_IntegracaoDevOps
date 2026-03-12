@@ -1,0 +1,449 @@
+
+📚 1. O contexto antes do DevOps
+
+Nos slides aparecem **dois mundos diferentes** dentro das empresas:
+
+### 👨‍💻 Desenvolvimento (Dev)
+
+Objetivo do time de desenvolvimento:
+
+* Agilidade
+* Criar novas funcionalidades
+* Entregar rápido
+* Inovar
+
+ 🖥️ Operações (Ops)
+
+Objetivo do time de operações:
+
+* Estabilidade do sistema
+* Segurança
+* Escalabilidade
+* Evitar que o sistema caia
+
+📌 O problema:
+Esses objetivos **entram em conflito**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧱 2. “O muro da confusão”
+
+Os slides citam o conceito chamado:
+
+👉 **Wall of Confusion (Muro da Confusão)**
+
+Ele representa o **conflito entre Dev e Ops**.
+
+### Exemplo do slide
+
+O time de Ops diz:
+
+> "Não vamos atualizar o sistema porque ele caiu no último deploy."
+
+Enquanto o time de Dev diz:
+
+> "Temos 10 novas funcionalidades prontas."
+
+Ou seja:
+
+* **Dev quer mudar o sistema**
+* **Ops quer manter tudo estável**
+
+Isso gera:
+
+* atrasos
+* conflitos
+* culpa entre equipes
+* problemas de comunicação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 🚀 3. O que é DevOps
+
+Os slides definem DevOps como:
+
+> **Uma mudança cultural que integra desenvolvimento e operações para entregar valor ao cliente com rapidez e qualidade.**
+
+⚠️ DevOps **não é:**
+
+* um cargo
+* uma ferramenta
+* apenas automação
+
+DevOps é principalmente **cultura + práticas + automação**.
+
+O objetivo é:
+
+✔ entregar software **mais rápido**
+✔ com **qualidade**
+✔ e **menos falhas**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 🧩 4. Framework CALMS (Pilares do DevOps)
+
+Os slides mostram os **5 pilares do DevOps**, conhecidos como **CALMS**.
+
+## C – Culture (Cultura)
+
+Significa:
+
+* colaboração entre equipes
+* responsabilidade compartilhada
+* parar de procurar culpados
+
+Em vez de:
+
+❌ "Foi culpa do Dev"
+
+Passa a ser:
+
+✔ "Como resolvemos isso juntos?"
+
+---
+
+## A – Automation (Automação)
+
+Automação reduz:
+
+* tarefas repetitivas
+* erros humanos
+* tempo de trabalho
+
+Exemplos:
+
+* pipelines de CI/CD
+* testes automáticos
+* deploy automático
+
+---
+
+## L – Lean (Enxuto)
+
+Vem da metodologia **Lean**.
+
+Foco em:
+
+* reduzir desperdícios
+* entregar valor mais rápido
+* trabalhar com **pequenos incrementos**
+
+Ou seja:
+
+Em vez de lançar **uma grande atualização**, lança **pequenas melhorias continuamente**.
+
+---
+
+## M – Measurement (Medição)
+
+DevOps usa **dados e métricas** para melhorar o processo.
+
+Exemplos de métricas:
+
+* tempo de deploy
+* número de erros
+* tempo para corrigir falhas
+* performance do sistema
+
+Decisões são feitas **baseadas em dados**, não em achismo.
+
+---
+
+## S – Sharing (Compartilhamento)
+
+Significa compartilhar:
+
+* conhecimento
+* ferramentas
+* experiências
+* erros e aprendizados
+
+Isso ajuda o time a **evoluir mais rápido**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 🔁 5. Os Três Caminhos do DevOps
+
+Outro conceito importante dos slides é **The Three Ways**.
+
+## 1️⃣ Fluxo (Flow)
+
+O objetivo é fazer o código ir **rápido do desenvolvimento para produção**.
+
+Fluxo simplificado:
+
+```
+Dev → Build → Test → Deploy → Produção
+```
+
+Quanto mais rápido e automático, melhor.
+
+---
+
+## 2️⃣ Feedback
+
+Quando algo dá errado:
+
+➡️ o time precisa saber **imediatamente**.
+
+Exemplo:
+
+* erro em produção
+* falha em teste
+* problema de performance
+
+O feedback volta para o desenvolvedor **rapidamente**.
+
+---
+
+## 3️⃣ Aprendizado contínuo
+
+DevOps incentiva:
+
+* experimentação
+* melhorias constantes
+* aprendizado com erros
+
+Falhar **não é o problema**.
+
+O problema é **não aprender com o erro**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 🔄 6. Ciclo de Vida DevOps
+
+Os slides mostram o **DevOps Lifecycle**, que representa as etapas do desenvolvimento.
+
+---
+
+## 📋 Plan (Planejar)
+
+Definição:
+
+Planejamento do produto.
+
+Atividades:
+
+* definir requisitos
+* priorizar funcionalidades
+* organizar backlog
+
+Ferramentas comuns:
+
+* Jira
+* Azure Boards
+* GitHub Projects
+
+---
+
+## 💻 Code (Codificar)
+
+Fase onde o código é escrito.
+
+Inclui:
+
+* desenvolvimento
+* controle de versão
+* code review
+
+Ferramentas:
+
+* Git
+* GitHub
+* GitLab
+
+---
+
+## ⚙️ Build (Construir)
+
+Transforma o código em algo executável.
+
+Exemplo:
+
+* compilar aplicação
+* criar **imagem Docker**
+
+Isso geralmente é feito automaticamente por **pipelines**.
+
+---
+
+## 🧪 Test (Testar)
+
+Verifica:
+
+* qualidade
+* funcionamento
+* segurança
+
+Tipos de testes:
+
+* testes unitários
+* análise de segurança
+* testes automatizados
+
+---
+
+## 📦 Release (Liberar)
+
+Aqui é decidido que a versão está pronta.
+
+Exemplo:
+
+* criar **versão do software**
+* aprovar artefato para produção
+
+---
+
+## 🚀 Deploy (Implantar)
+
+Colocar o software no ambiente real.
+
+Pode ser feito em:
+
+* servidores
+* cloud
+* Kubernetes
+
+Idealmente **automatizado**.
+
+---
+
+## 🖥️ Operate (Operar)
+
+Gestão do sistema em produção.
+
+Inclui:
+
+* manutenção
+* atualizações
+* suporte ao usuário
+
+---
+
+## 📊 Monitor (Monitorar)
+
+Acompanhar a saúde do sistema.
+
+Exemplo:
+
+* uso de CPU
+* erros
+* performance
+* falhas
+
+Ferramentas monitoram tudo continuamente.
+
+---
+
+# 🎯 Resumo geral (o que mais cai em prova)
+
+**DevOps**
+
+→ Cultura que integra desenvolvimento e operações.
+
+**Problema que ele resolve**
+
+→ conflito entre Dev e Ops (Wall of Confusion)
+
+**Pilares do DevOps**
+
+CALMS:
+
+* Culture
+* Automation
+* Lean
+* Measurement
+* Sharing
+
+**Three Ways**
+
+* Fluxo
+* Feedback
+* Aprendizado contínuo
+
+**Ciclo DevOps**
+
+```
+Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+```
+
+---
+
+💡 Dica: esse tipo de slide geralmente gera **pergunta discursiva na prova** tipo:
+
+> "Explique o conceito de DevOps e seus pilares."
+
