@@ -6,5 +6,4 @@ class Calculadora:
         return a - b
 
     def operacao_complexa(self, a, b):
-        # BUG INTENCIONAL: deveria ser multiplicação (*)
-        return a + b
+        return a * b  # correto
